@@ -49,7 +49,6 @@ export default function Home() {
             alt="Imagen del equipo de trabajo"
             className={styles.nosotros__img}
             priority
-            placeholder="blur"
           />
           <article className={styles.nosotros__text}>
             <h2 className={styles.nosotros__title}>Sobre Nosotros</h2>
