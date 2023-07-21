@@ -1,11 +1,15 @@
-.nav__figure {
-  width: 200px;
-}
-
 .nav {
   display: flex;
   padding: 10px 5px;
   justify-content: space-between;
+}
+
+.nav__title {
+  font-family: var(--dm_serif_display);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--Grey);
+  margin-left: 10px;
 }
 
 .nav__menu {

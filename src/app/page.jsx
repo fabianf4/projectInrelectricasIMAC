@@ -16,13 +16,7 @@ export default function Home() {
     <>
       <header className={`${styles.header} ${styles.container}`}>
         <nav className={`${styles.nav} ${styles.container}`}>
-          <figure className={styles.nav__figure}>
-            <Image
-              src={logoLargo}
-              alt="Logo from Interelectricas IMAC"
-              className={styles.nav__img}
-            />
-          </figure>
+          <h1 className={styles.nav__title}>Interelectricas IMAC</h1>
 
           <div className={styles.nav__menu}>
             <a href="#inicio" className={styles.nav__link}>
@@ -54,6 +48,7 @@ export default function Home() {
             src={nosotros}
             alt="Imagen del equipo de trabajo"
             className={styles.nosotros__img}
+            priority
           />
           <article className={styles.nosotros__text}>
             <h2 className={styles.nosotros__title}>Sobre Nosotros</h2>
@@ -127,7 +122,7 @@ export default function Home() {
             <h3 className={styles.servicios__subtitle}>
               Conoce nuestro trabajo
             </h3>
-            <a href="" className={styles.servicios__button}>
+            <a href="#" className={styles.servicios__button}>
               Como trabajamos
             </a>
           </article>
