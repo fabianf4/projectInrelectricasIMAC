@@ -19,8 +19,9 @@ export default function Home() {
           <h1 className={styles.nav__title}>Interelectricas IMAC</h1>
 
           <div className={styles.nav__menu}>
-            //jsajkkjs
-            
+          <a href="#inicio" className={styles.nav__link}>
+              Inicio
+            </a>            
             <a href="#nosotros" className={styles.nav__link}>
               Nosotros
             </a>
