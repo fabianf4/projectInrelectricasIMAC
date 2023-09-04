@@ -1,46 +1,21 @@
 import styles from './page.module.css'
 import Image from 'next/image'
-import logoLargo from '../../public/images/logoLargo.jpeg'
 import nosotros from '../../public/images/nosotros.jpg'
-import menuHamburger from '../../public/images/icon-hamburger.svg'
 import iconMision from '../../public/images/icon-snappy-process.svg'
 import iconVision from '../../public/images/icon-people-first.svg'
 import iconPhone from '../../public/images/icon-phone.svg'
 import iconMail from '../../public/images/icon-mail.svg'
 import iconLocation from '../../public/images/icon-location.svg'
 import iconClock from '../../public/images/icon-clock.svg'
-import iconFacebook from '../../public/images/icon-facebook.svg'
+import ContactUs from './components/ContactUs'
+
+import MyNav from './components/MyNav'
 
 export default function Home() {
   return (
     <>
       <header className={`${styles.header} ${styles.container}`}>
-        <nav className={`${styles.nav} ${styles.container}`}>
-          <h1 className={styles.nav__title}>Interelectricas IMAC</h1>
-
-          <div className={styles.nav__menu}>
-          <a href="#inicio" className={styles.nav__link}>
-              Inicio
-            </a>            
-            <a href="#nosotros" className={styles.nav__link}>
-              Nosotros
-            </a>
-            <a href="#servicios" className={styles.nav__link}>
-              Servicios
-            </a>
-            <a href="#" className={styles.nav__link}>
-              Proyectos
-            </a>
-            <a href="#contacto" className={styles.nav__link}>
-              Contacto
-            </a>
-          </div>
-          <Image
-            src={menuHamburger}
-            alt="Menu hamburgesa"
-            className={styles.nav__iconMenu}
-          />
-        </nav>
+        <MyNav />
       </header>
       <main className={styles.main}>
         <section className={styles.nosotros} id="nosotros">
@@ -184,71 +159,7 @@ export default function Home() {
           </div>
           */}
         </section>
-        <section className={styles.contactanos} id="contacto">
-          <h2 className={styles.contactanos__title}>Contactanos</h2>
-          <form className={styles.contactanos__form}>
-            <div className={styles.contactanos__row}>
-              <label htmlFor="email" className={styles.contactanos__label}>
-                Correo <br />
-              </label>
-              <input
-                type="email"
-                placeholder="Correo electronico"
-                className={styles.contactanos__input}
-                required
-                id="email"
-                name="email"
-              />
-            </div>
-            <div className={styles.contactanos__row}>
-              <label htmlFor="name" className={styles.contactanos__label}>
-                Nombre <br />
-              </label>
-              <input
-                type="text"
-                placeholder="Nombre"
-                className={styles.contactanos__input}
-                required
-                id="name"
-                name="name"
-              />
-            </div>
-
-            <div className={styles.contactanos__row}>
-              <label htmlFor="phone" className={styles.contactanos__label}>
-                Telefono <br />
-              </label>
-              <input
-                type="tel"
-                placeholder="Telefono"
-                className={styles.contactanos__input}
-                required
-                id="phone"
-                name="phone"
-              />
-            </div>
-
-            <div className={styles.contactanos__row}>
-              <label htmlFor="message" className={styles.contactanos__label}>
-                Mensaje <br />
-              </label>
-              <textarea
-                type="textarea"
-                placeholder="Mensaje"
-                className={styles.contactanos__input}
-                required
-                id="message"
-                name="message"
-              />
-            </div>
-
-            <input
-              type="submit"
-              value="Enviar"
-              className={styles.contactanos__button}
-            />
-          </form>
-        </section>
+        <ContactUs />
       </footer>
     </>
   )

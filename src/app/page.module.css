@@ -16,9 +16,29 @@
   display: none;
 }
 
+.nav__menu__movil {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(24, 24, 24, 0.9);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--Grey-Light);
+  font-size: 20px;
+}
+
 .nav__iconMenu {
-  width: 30px;
+  width: 29px;
   margin-right: 10px;
+  z-index: 1000;
 }
 
 .nosotros {
