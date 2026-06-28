@@ -25,21 +25,21 @@ Abrir [http://localhost:3000](http://localhost:3000).
 
 Copiar `.env.example` a `.env` y configurar:
 
-| Variable | Descripción |
-|---|---|
-| `NODEMAILER_EMAIL` | Correo remitente (Gmail) |
-| `NODEMAILER_PW` | Contraseña de aplicación de Gmail |
-| `NODEMAILER_EMAIL_TO` | Correo destino de los mensajes |
-| `NODEMAILER_SUBJECT` | Asunto del correo |
+| Variable              | Descripción                       |
+| --------------------- | --------------------------------- |
+| `NODEMAILER_EMAIL`    | Correo remitente (Gmail)          |
+| `NODEMAILER_PW`       | Contraseña de aplicación de Gmail |
+| `NODEMAILER_EMAIL_TO` | Correo destino de los mensajes    |
+| `NODEMAILER_SUBJECT`  | Asunto del correo                 |
 
 ## Scripts
 
-| Comando | Descripción |
-|---|---|
-| `pnpm dev` | Servidor de desarrollo |
-| `pnpm build` | Build de producción |
+| Comando      | Descripción            |
+| ------------ | ---------------------- |
+| `pnpm dev`   | Servidor de desarrollo |
+| `pnpm build` | Build de producción    |
 | `pnpm start` | Servidor de producción |
-| `pnpm lint` | ESLint |
+| `pnpm lint`  | ESLint                 |
 
 ## Estructura
 
