@@ -2,9 +2,9 @@
   "name": "project_interelctricas_imac",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@11.9.0",
+  "packageManager": "pnpm@9.15.4",
   "engines": {
-    "node": "24.18.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "dev": "next dev",
