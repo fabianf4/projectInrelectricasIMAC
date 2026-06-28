@@ -1,5 +1,6 @@
 import './globals.css'
 import { DM_Serif_Display, Karla } from 'next/font/google'
+import SiteNotice from './components/SiteNotice'
 
 const dm_serif_display = DM_Serif_Display({
   display: 'swap',
@@ -24,7 +25,10 @@ export default function RootLayout({ children }) {
       lang="es"
       className={`${dm_serif_display.className} ${karla.className}`}
     >
-      <body className="body">{children}</body>
+      <body className="body">
+        <SiteNotice />
+        {children}
+      </body>
     </html>
   )
 }

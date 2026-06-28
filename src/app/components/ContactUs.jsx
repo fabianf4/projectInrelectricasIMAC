@@ -10,30 +10,20 @@ export default function ContactUs() {
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
 
-  async function onSubmit(event) {
+  function onSubmit(event) {
     event.preventDefault()
-
-    const response = await fetch('/api/mail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        phone,
-        message
-      })
-    })
-
-    const data = await response.json()
 
     setEmail('')
     setName('')
     setPhone('')
     setMessage('')
 
-    Swal.fire('Mensaje enviado', data, 'success')
+    Swal.fire({
+      title: 'Formulario deshabilitado',
+      html: 'El formulario de contacto se encuentra deshabilitado. Este sitio fue desarrollado como proyecto universitario.<br><br>Puedes contactarme en <a href="https://github.com/fabianf4" target="_blank" rel="noopener noreferrer">github.com/fabianf4</a>',
+      icon: 'warning',
+      confirmButtonText: 'Cerrar'
+    })
   }
 
   return (
